@@ -6,6 +6,7 @@ html
       body {
         padding: 50px;
         font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        text-align: center;
       }
       input {
         font-size: 24px;
@@ -13,6 +14,7 @@ html
       }
   body
     h1 Join the #{community} community on Slack!
+    img(src="http://i.imgur.com/KvZjMOA.png")
     form(method="POST", action="/invite")#join-form
       input(type="text", name="email", placeholder="Enter your email")#slack-email
     script.
