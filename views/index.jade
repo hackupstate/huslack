@@ -7,14 +7,17 @@ html
         padding: 50px;
         font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
         text-align: center;
+        background-color: #222;
+        color: #FFF;
       }
       input {
         font-size: 24px;
         width: 400px;
+        padding: 5px;
       }
   body
     h1 Join the #{community} community on Slack!
-    img(src="http://i.imgur.com/KvZjMOA.png")
+    img(src="http://i.imgur.com/pPru01U.jpg")
     form(method="POST", action="/invite")#join-form
       input(type="text", name="email", placeholder="Enter your email")#slack-email
     script.
