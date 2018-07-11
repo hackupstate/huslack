@@ -5,27 +5,59 @@ html
     style.
       body {
         padding: 50px;
-        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         text-align: center;
         background-color: #f3f3f3;
-        color: #FFF;
+        color: #3498d5;
       }
-      input {
-        font-size: 24px;
-        width: 400px;
-        padding: 5px;
+      .centered {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0px auto;
+      }
+      input[type=text] {
+        width: 100%;
+        margin-top: 20px;
+
+        font-size: 20px;
+        font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #858585;
+      }
+      input[type=submit] {
+        margin-top: 20px;
+        padding: 10px;
+
+        width: 100%;
+        box-sizing: content-box;
+
+        background-color: #3498d5;
+        color: #fff;
+        border-radius: 4px;
+        line-height: 46px;
+        text-align: center;
+
+        font-size: 18px;
+        font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-weight: bold;
       }
       img {
         width: 100%;
-        max-width: 500px;
+        max-width: 327px;
         margin-top: 50px;
         margin-bottom: 50px;
       }
   body
-    h1 Join the #{community} community on Slack!
     img(src="https://i.imgur.com/Dz685U1.png")
-    form(method="POST", action="/invite")#join-form
-      input(type="text", name="email", placeholder="Enter your email")#slack-email
+    h1 Join the #{community} community on Slack!
+    div.centered
+      form(method="POST", action="/invite")#join-form
+        input(type="text", name="email", placeholder="Enter your email")#slack-email
+        input(type="submit", value="Join Slack")
     script.
       var form = document.getElementById('join-form');
       var email = document.getElementById('slack-email')
