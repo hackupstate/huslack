@@ -39,3 +39,6 @@ $ bin/www
 You can access <http://localhost:3000> on your web browser.
 
 ![](https://raw.github.com/outsideris/slack-invite-automation/master/screenshots/join-page.png)
+
+## Deployment
+Automatic deployments are setup from the `master` branch in Heroku.
